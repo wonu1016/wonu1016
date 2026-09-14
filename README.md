@@ -1,16 +1,36 @@
-## Hi there 👋
+```python
+from typing import Any
 
-<!--
-**wonu1016/wonu1016** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+PORTFOLIO = r'https://yeeeengyu.notion.site/1e92a6b0e27480cfbb0eff89b51303fd'
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Yeeeengyu:
+    role = 'AI/ML Backend Engineer'
+
+    stack = {
+        'Backend': ['FastAPI', 'Flask'],
+        'AI/ML': ['PyTorch', 'LangChain', 'LangGraph', 'YOLO'],
+        'Database': ['MongoDB', 'MySQL'],
+        'Infra': ['Docker', 'AWS'],
+    }
+
+    etc = {
+        'blog': {
+            'skill_blog':  r'https://blog.ingyuc.click',
+            'life_blog': r'https://blog.naver.com/yeeeengyu'
+        },
+        'linkedIn': r'https://linkedin.com/in/인규-최',
+    }
+
+
+    def introduce(self) -> dict[str, Any]:
+        return {
+            'role': self.role, 
+            'stacks': self.stack,
+            'etc': self.etc,
+            'portfolio': PORTFOLIO
+        }
+
+me = Yeeeengyu()
+print(me.introduce())
+```
