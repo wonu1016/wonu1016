@@ -1,9 +1,8 @@
-from typing import Any
+    from typing import Any
 
-
-class Wonu:
-    name = '양원우'
-    role = 'Backend Developer'
+    class Wonu:
+        name = '양원우'
+        role = 'Backend Developer'
 
     introduction = (
         '팀원들이 여러 걱정을 하지 않도록 고민하며, '
